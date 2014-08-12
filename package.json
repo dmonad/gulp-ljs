@@ -1,6 +1,6 @@
 {
   "name": "gulp-ljs",
-  "description": "Literate javascript gulp plugin.",
+  "description": "Literate Javascript Gulp plugin.",
   "version": "0.1.0",
   "homepage": "http://github.com/DadaMonad/gulp-ljs",
   "repository": "git://github.com/DadaMonad/gulp-ljs.git",

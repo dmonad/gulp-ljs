@@ -1,9 +1,9 @@
 
 # gulp-ljs
-This is a gulp plugin for [ljs](https://github.com/phadej/ljs) - literate Javascript.
-Note that there are two ways of literating your code.
+This is a gulp plugin for [ljs](https://github.com/phadej/ljs) - Literate Javascript.
+Note, that there are two ways of literating your code:
 * .lit.js -> .md and .lit.js -> js (see [literate](https://www.npmjs.org/package/literate))
-* .js -> .md **THIS**
+* .js -> .md \*THIS\*
 
 Everything inside `/*` and `*/` is handled as markup. Your code will be transformed into the markup code environment.
 Just to give you an idea:
@@ -19,6 +19,12 @@ console.log(awesome);
 ```
 
 ## Usage
+Install `gulp-ljs`:
+```
+npm install gulp-ljs --save-dev
+```
+Using this plugin is pretty straight forward. For the sake of sanity I replace *automatically* the extension of the filepath.
+While the gulp-guys will hate this, I think that this this could save your day (when you forgot to set a replace pipe).
 ```
 var ljs = require('gulp-ljs');
 
@@ -31,8 +37,8 @@ gulp.task('literate', function () {
 ```
 
 ## Options
-
-Don't include the code in the markup file.
+### code
+Don't include the code in the markup file. Default: true.
 ```
 var ljs = require('gulp-ljs');
 
