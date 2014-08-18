@@ -23,15 +23,14 @@ Install `gulp-ljs`:
 ```
 npm install gulp-ljs --save-dev
 ```
-Using this plugin is pretty straight forward. For the sake of sanity I replace *automatically* the extension of the filepath.
-While the gulp-guys will hate this, I think that this this could save your day (when you forgot to set a replace pipe).
+Using this plugin is pretty straight forward. For the sake of sanity I replace the extension of the filepath *automatically*.
 ```
 var ljs = require('gulp-ljs');
 
 gulp.task('literate', function () {
   gulp.src('path/**/*.js')
     .pipe(ljs())
-    .pipe(gulp.dest('path/'))
+    .pipe(gulp.dest('path/')) // writes *.md
 });
 
 ```
